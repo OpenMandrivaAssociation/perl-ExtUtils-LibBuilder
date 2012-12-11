@@ -47,3 +47,18 @@ rm -rf %buildroot
 %perl_vendorlib/*
 
 
+
+
+%changelog
+* Sat Apr 23 2011 Funda Wang <fwang@mandriva.org> 0.40.0-2mdv2011.0
++ Revision: 656909
+- rebuild for updated spec-helper
+
+* Sat Nov 27 2010 Guillaume Rousse <guillomovitch@mandriva.org> 0.40.0-1mdv2011.0
++ Revision: 601874
+- update to new version 0.04
+
+* Sat Nov 06 2010 Guillaume Rousse <guillomovitch@mandriva.org> 0.30.0-1mdv2011.0
++ Revision: 594313
+- import perl-ExtUtils-LibBuilder
+
