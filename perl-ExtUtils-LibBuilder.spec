@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    3
 
 Summary:    A tool to build C libraries
 License:    GPL+ or Artistic
@@ -16,8 +16,8 @@ BuildRequires: perl(File::Spec)
 BuildRequires: perl(File::Temp)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(Module::Build)
+BuildRequires: perl-devel
 BuildArch: noarch
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 no description found
@@ -34,14 +34,9 @@ no description found
 ./Build test
 
 %install
-rm -rf %buildroot
 ./Build install destdir=%{buildroot}
 
-%clean
-rm -rf %buildroot
-
 %files
-%defattr(-,root,root)
 %doc Changes META.yml README
 %{_mandir}/man3/*
 %perl_vendorlib/*
