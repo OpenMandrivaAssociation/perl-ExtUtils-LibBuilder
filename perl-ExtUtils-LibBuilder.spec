@@ -1,15 +1,15 @@
 %define upstream_name    ExtUtils-LibBuilder
-%define upstream_version 0.04
+%define upstream_version 0.09
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    5
+Version:    %{upstream_version}
+Release:    1
 
 Summary:    A tool to build C libraries
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/ExtUtils/%{upstream_name}-%{upstream_version}.tar.gz
+Url:        https://github.com/ambs/ExtUtils-LibBuilder
+Source0:    https://cpan.metacpan.org/authors/id/A/AM/AMBS/ExtUtils-LibBuilder-%{upstream_version}.tar.gz
 
 BuildRequires: perl(ExtUtils::CBuilder)
 BuildRequires: perl(File::Spec)
