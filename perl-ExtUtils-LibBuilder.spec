@@ -2,7 +2,7 @@
 %define upstream_version 0.09
 Name:       perl-%{upstream_name}
 Version:	0.09
-Release:	1
+Release:	2
 
 Summary:    A tool to build C libraries
 License:    GPL+ or Artistic
