@@ -2,7 +2,7 @@
 %define upstream_version 0.09
 Name:       perl-%{upstream_name}
 Version:	0.09
-Release:	3
+Release:	4
 
 Summary:    A tool to build C libraries
 License:    GPL+ or Artistic
@@ -25,7 +25,7 @@ no description found
 %setup -q -n ExtUtils-LibBuilder-0.09
 
 %build
-%{__perl} Build.PL installdirs=vendor
+perl Build.PL installdirs=vendor
 
 ./Build
 
