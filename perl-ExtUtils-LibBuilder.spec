@@ -1,13 +1,14 @@
 %define upstream_name    ExtUtils-LibBuilder
+%define upstream_version 0.09
 Name:       perl-%{upstream_name}
-Version:    0.09
-Release:    2
+Version:	0.09
+Release:	1
 
 Summary:    A tool to build C libraries
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        https://github.com/ambs/ExtUtils-LibBuilder
-Source0:    https://cpan.metacpan.org/authors/id/A/AM/AMBS/ExtUtils-LibBuilder-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/A/AM/AMBS/ExtUtils-LibBuilder-0.09.tar.gz
 
 BuildRequires: perl(ExtUtils::CBuilder)
 BuildRequires: perl(File::Spec)
@@ -41,17 +42,4 @@ no description found
 
 
 
-
-%changelog
-* Sat Apr 23 2011 Funda Wang <fwang@mandriva.org> 0.40.0-2mdv2011.0
-+ Revision: 656909
-- rebuild for updated spec-helper
-
-* Sat Nov 27 2010 Guillaume Rousse <guillomovitch@mandriva.org> 0.40.0-1mdv2011.0
-+ Revision: 601874
-- update to new version 0.04
-
-* Sat Nov 06 2010 Guillaume Rousse <guillomovitch@mandriva.org> 0.30.0-1mdv2011.0
-+ Revision: 594313
-- import perl-ExtUtils-LibBuilder
 
